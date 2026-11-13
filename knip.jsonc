@@ -1,0 +1,5 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
+  "entry": ["src/app/index.jsx!", "steiger.config.js"],
+  "project": ["src/**/*.{js,jsx}!", "vite.config.js", "steiger.config.js"],
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
+  "files": { "includes": ["src/**"] },
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2 },
+  "javascript": {
+    "formatter": { "quoteStyle": "single", "semicolons": "asNeeded" }
+  },
+  "css": { "formatter": { "quoteStyle": "single" } },
+  "linter": {
+    "enabled": true,
+    "domains": { "react": "recommended" },
+    "rules": {
+      "preset": "recommended",
+      "a11y": { "preset": "all" },
+      "correctness": { "useExhaustiveDependencies": "error" },
+      "suspicious": {
+        "noConsole": {
+          "level": "error",
+          "options": { "allow": ["warn", "error"] }
+        }
+      },
+      "nursery": {
+        "noFloatingPromises": "error",
+        "noMisusedPromises": "error",
+        "useReactCompiler": "off"
+      }
+    }
+  }
+}

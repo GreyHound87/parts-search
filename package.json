@@ -1,0 +1,32 @@
+{
+  "name": "parts-search",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "biome:check": "biome check --error-on-warnings .",
+    "biome:fix": "biome check --write .",
+    "knip": "knip",
+    "knip:prod": "knip --production",
+    "steiger": "steiger ./src",
+    "verify": "npm run biome:check && npm run knip && npm run steiger && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.4",
+    "@feature-sliced/steiger-plugin": "^0.8.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "knip": "^6.44.1",
+    "lefthook": "^2.2.2",
+    "steiger": "^0.9.0",
+    "vite": "^8.3.5"
+  }
+}

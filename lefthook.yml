@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://lefthook.dev/schema.json
+# The owner installs lefthook and runs `npx lefthook install`.
+
+pre-commit:
+  jobs:
+    - run: npx @biomejs/biome check --write --staged --files-ignore-unknown=true --no-errors-on-unmatched
+      stage_fixed: true
